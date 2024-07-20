@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock, Paper, Scissors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="title-div" id="title" onclick="displayRules()">
+      <a href="#Rules">
+      <span class="game-title">Rock</span>
+      <span class="game-title">Paper</span>
+      <span class="game-title">Scissors</span>
+      </a>
+    </div>
+    <div class="container">
+      <div class="move-button-div" id="moveSelect">
+        <div></div>
+        <button class="move-button rock"><a href="#Result" class="imageAnchor"><img src="images/Rock.png" alt="Rock"><span class="move-title">Rock</span></a></button>
+
+        <button class="move-button paper"><a href="#Result" class="imageAnchor"><img src="images/Paper.png" alt="Paper"><span class="move-title">Paper</span></a></button>
+
+        <button class="move-button scissors"><a href="#Result" class="imageAnchor"><img src="images/Scissors.png" alt="Scissors"><span class="move-title">Scissors</span></a></button>
+        <div></div>
+      </div>
+
+      <div class="result-container" id="Result"> 
+        <p class="js-win"></p>
+        <div class="result-img-container">
+            <span class="playerMove js-playerMove"></span>
+            <div></div>
+            <div></div>
+            <span class="computerMove js-computerMove"></span>
+        </div>
+        <div class="move-title-container">
+            <span class="js-playerMove-Title"></span>
+            <div></div>
+            <div></div>
+            <span class="js-computerMove-Title"></span>
+          </div>
+        <div class="playAgainButton"></div>
+      </div>
+    </div>
+    <div class="score-reset-div">
+      <div class="score-div">
+        <span class="js-score-win score-details"></span>
+        <span class="js-score-lose score-details"></span>
+        <span class="js-score-tie score-details"></span>
+      </div>
+    </div>
+    <div class="reset-autoPlay-btn">
+      <button  class = 'reset-button'>Reset Score</button>
+      <button class="auto-play-btn"><div onclick ='window.location.href="#Result"'></div>Auto Play</button>
+    </div>   
+    <div id="Rules">
+      <div class="js-rules-container"></div>
+      <div class="js-rules-exit"></div>
+    </div>
+    <script src="scripts.js"></script>
+</html>
